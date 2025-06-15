@@ -1,0 +1,160 @@
+/* .started {
+  background-color: #44a3d5;
+  color: white;
+} */
+
+:root {
+  --main-color: #37517e;
+  --blue: #37517e;
+}
+.navbar-main {
+  background-color: var(--main-color) !important;
+  width: 100%;
+}
+
+.hero-section {
+  background-color: var(--main-color);
+}
+.hero-section a {
+  color: white;
+  font-family: sans-serif;
+}
+.dropdown-menu a {
+  color: black;
+  font-family: sans-serif;
+}
+.animation-image {
+  animation: move 1s infinite alternate linear;
+}
+.brand-images img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+.text-blue {
+  color: var(--blue);
+}
+.gray {
+  width: 16%;
+  height: 2px;
+  background-color: lightgray;
+  margin: auto;
+  position: relative;
+}
+
+.blue {
+  width: 50%;
+  height: 4px;
+  background-color: #0dcaf0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-sm {
+  font-size: 0.8rem !important;
+}
+
+.bg-blue {
+  background-color: var(--main-color) !important;
+}
+.myservice-card {
+  transition: all 0.4s;
+}
+.myservice-card:hover {
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+.myservice-card h5 {
+  transition: all 0.4s;
+}
+.myservice-card:hover h5 {
+  color: var(--bs-info);
+}
+.my-work-card:hover .card-content {
+  transform: translateY(-10px);
+}
+.my-work-card .card-content {
+  transition: all 0.3s;
+}
+.my-work-card img {
+  transition: all 0.3s;
+}
+.my-work-card:hover img {
+  scale: 1.1;
+}
+.number {
+  position: relative;
+  z-index: 333;
+}
+/* .cta-section {
+  width: 100%;
+  background: linear-gradient(rgba(55, 81, 126, 0.85), rgba(55, 81, 126, 0.85)),
+    url("https://themewagon.github.io/arsha/assets/img/bg/bg-8.webp") center
+      center/cover no-repeat;
+  padding: 60px 0;
+  margin-bottom: 30px;
+} */
+/* .background-image {
+  width: 100%;
+  background-image: url("https://themewagon.github.io/arsha/assets/img/bg/bg-8.webp");
+  background-size: ;
+} */
+.cta-section {
+  width: 100%;
+  background: linear-gradient(rgba(32, 43, 62, 0.9), rgba(52, 89, 147, 0.9)),
+    url("https://themewagon.github.io/arsha/assets/img/bg/bg-8.webp") center
+      center/cover no-repeat;
+  padding: 60px 0;
+  margin-bottom: 30px;
+}
+.cta-btn {
+  display: inline-block;
+  padding: 12px 40px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  background: transparent;
+  transition: background 0.3s, color 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+.cta-btn {
+  transition: all 0.3s;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  background: #47b2e4; /* blue background on hover */
+  color: #fff; /* text stays white */
+  text-decoration: none;
+  border-color: #47b2e4; /* optional: border matches background on hover */
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      -20px
+    ); /* Adjust this value to control movement distance */
+  }
+}
+
+@media (max-width: 990px) {
+  .container-fluid button {
+    color: white;
+  }
+  .navbar-toggler {
+    background-color: transparent !important;
+    border: 2px solid white !important;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+}
